@@ -1,0 +1,16 @@
+{
+  "name": "cheese-coffee",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fsufitch/cheese-coffee",
+  "author": "Filip Sufitchi <fsufitchi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-db": "ts-node cheese-coffee/db/build-db.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
