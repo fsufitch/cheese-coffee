@@ -1,20 +1,15 @@
-from argparse import ArgumentParser
-from contextlib import redirect_stderr, redirect_stdout
 import csv
-from itertools import chain, combinations
 import logging
-import shutil
 import sqlite3
-import sys
-from emojis import count
-import emojis
-import requests
-import progressbar
+from argparse import ArgumentParser
 from dataclasses import dataclass
-from typing import Any, Collection, Container, FrozenSet, Iterable, List, Mapping, Optional, Set
-from emojis.db import Emoji, get_emoji_by_code
+from itertools import chain, combinations
+from typing import (Any, Collection, FrozenSet, Iterable, List, Mapping,
+                    Optional, Set)
 
-from alive_progress import alive_bar, alive_it
+import requests
+from alive_progress import alive_it
+from emojis.db import Emoji, get_emoji_by_code
 
 logging.basicConfig(level=logging.INFO)
 
